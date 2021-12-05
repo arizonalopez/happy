@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ video.title }}</h1>
+<span class='badge'>{{ video.label }}</span>
+</h1>
+<div>
+    {{ video.embed_code|safe }}
+</div>
+<div>
+    <h2>{% trans 'Impressions' %}</h2>
+    <ul>
+        <li>{% trans "Desktop Impressions" %} {{ video.desktop_impressions }}</li>
+        <li>{% trans "Mobile Impressions" %} {{ video.mobile_impressions }}</li>
+        <li>{% trans "Total Impressions" %} {{ video.total_impressions }}</li>
+    </ul>
+</div>
+{% endblock %}

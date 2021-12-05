@@ -1,0 +1,18 @@
+<html>
+    <head>
+        {% block head %}{% endblock %}
+        <title>
+            {% block title_html %}{% endblock %}
+        </title>
+        {% load static %}
+        <link href="{% static 'lopez/time.css' %}" rel="stylesheet" type="text/css">
+    </head>
+    <body style="background-color: beige;" class='corporate-jumbo'>
+        <h1 text-align='center'>
+            datetime - {% block h1 %}{% endblock %}   
+        </h1>
+        <article>
+            {% block article_content %}{% endblock %}
+        </article>
+    </body>
+</html>
