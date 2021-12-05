@@ -26,7 +26,7 @@ SECRET_KEY = '*n&@otezh78$_y+w@1v*$2^_qh7ox5m(_@1ks7f(*(l53r@u$9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['emmana.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
